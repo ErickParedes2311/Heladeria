@@ -55,11 +55,18 @@ img{
 
 
 // abreviasiones
-@mixin displayFlex ($direccion, $align, $justify){
+@mixin centrarVertical{
         display: flex;
-        flex-direction: $direccion;
-        align-items: $align;
-        justify-content: $justify;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+};
+
+@mixin centrarHorizontal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 };
 
 @mixin calcularRadio($padding, $radio){

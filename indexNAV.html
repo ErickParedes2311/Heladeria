@@ -1,0 +1,88 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    header{
+        background-color: #fff3f0;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+    }
+    .header_img{
+        flex: 1 1 1;
+        width: 25px;
+    }
+    .nav_navegation{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav_ul{
+        display: flex;
+    }
+    .ul__li{
+        list-style-type: none;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .li_enlaces{
+        &:hover{
+            color: #ec5f5f;
+        }
+    }
+
+    a.active{
+            color: #ec5f5f;
+        }
+    .btn_contacto{
+        border: none;
+        border-radius: 12px 0px;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        height: max-content;
+        cursor: pointer;
+        background-color: #ec5f5f;
+        color: white;
+    }
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Obtener todos los enlaces de navegación
+        const navLinks = document.querySelectorAll(".li_enlaces");
+
+        // Obtener la URL actual
+        const currentUrl = window.location.href;
+
+        // Iterar sobre cada enlace
+        navLinks.forEach(link => {
+            // Si el href del enlace coincide con la URL actual, agregar la clase "active"
+            if (link.href === currentUrl) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
+
+
+
+<header>
+    <img class="header_img" src="/nuevop/Imagenes/cucurucho-de-helado.png" alt="icon_cucurucho-de-helado">
+    <nav class="nav_navegation">
+        <ul class="nav_ul">
+            <li class="ul__li active"><a class="li_enlaces" href="#">Inicio</a></li>
+            <li class="ul__li"><a class="li_enlaces" href="#">Nosotros</a></li>
+            <li class="ul__li"><a class="li_enlaces" href="#">Noticias</a></li>
+        </ul>
+    </nav>
+    <button class="btn_contacto">Contacto</button>
+</header>
