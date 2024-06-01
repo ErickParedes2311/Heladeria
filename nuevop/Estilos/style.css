@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: lighter;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  width: 20px;
+}
+
+button {
+  border: none;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+img {
+  width: 100px;
+}
+
+.zona_arrastre {
+  padding: 60px 20px;
+  border: 2px dashed #404040;
+  max-width: 60%;
+  min-width: 90%;
+  color: #404040;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

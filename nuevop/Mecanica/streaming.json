@@ -1,0 +1,347 @@
+{
+        "Nombre" : "Erick Paredes",
+        "Descripcion" : "“¡Bienvenido a Onix.tv, el paraíso de los amantes del cine! Ofrecemos cuentas premium de las principales plataformas de películas a precios mayoristas. ¿Por qué limitarte a una sola plataforma cuando puedes tenerlas todas? Con Onix.tv, obtienes acceso a un mundo de entretenimiento sin fin. ¡Explora las últimas películas, series y documentales de todo el mundo al alcance de tu mano! No más suscripciones individuales costosas, no más limitaciones. Con Onix.tv, el cine del mundo es tuyo. ¡Únete a nosotros y lleva tu experiencia cinematográfica al siguiente nivel!",
+        "Plataformas":
+        [
+                {
+                        "Magis Tv" :
+                                [
+                                        {
+                                                "imagen" : "direccion",
+                                                "Tipo": "4 Dispositivos en simultaneo",
+                                                "Duraccion" : "30 Dias",
+                                                "Precio_Compra" : "6.80",
+                                                "Precio_Venta" : "9"
+                                        },
+                                        {
+                                                "imagen" : "direccion",
+                                                "Tipo": "4 Dispositivos en simultaneo",
+                                                "Duraccion" : "3 Meses",
+                                                "Precio_Compra" : "17",
+                                                "Precio_Venta" : "27"
+                                        },
+                                        {
+                                                "imagen" : "direccion",
+                                                "Tipo": "4 Dispositivos en simultaneo",
+                                                "Duraccion" : "6 Meses",
+                                                "Precio_Compra" : "34",
+                                                "Precio_Venta" : "49"
+                                        },
+                                        {
+                                                "imagen" : "direccion",
+                                                "Tipo": "4 Dispositivos en simultaneo",
+                                                "Duraccion" : "12 Meses",
+                                                "Precio_Compra" : "63",
+                                                "Precio_Venta" : "87"
+                                        }
+                                ]
+                },
+                {
+                        "Netflix" :
+                        [
+                                
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "4",
+                                        "Precio_Venta" : "5"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "2 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "7",
+                                        "Precio_Venta" : "9"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "13.50",
+                                        "Precio_Venta" : "15"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "2 Meses",
+                                        "Precio_Compra" : "24.50",
+                                        "Precio_Venta" : "28"
+                                }
+                        ]
+                },
+                {
+                        "Amazon Prime" : 
+                        [
+                                
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "3.50",
+                                        "Precio_Venta" : "4.50"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "5",
+                                        "Precio_Venta" : "8"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "6.50",
+                                        "Precio_Venta" : "9.50"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "7.50",
+                                        "Precio_Venta" : "16"
+                                }
+                        ]
+                },
+                {
+                        "HBO MAX" :
+                        [
+                                
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "3.50",
+                                        "Precio_Venta" : "4.50"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "4.50",
+                                        "Precio_Venta" : "7.50"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "5",
+                                        "Precio_Venta" : "8"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "6.50",
+                                        "Precio_Venta" : "16"
+                                }
+                        ]
+                },
+                {
+                        "Disney" :
+                        [
+                               
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "3",
+                                        "Precio_Venta" : "4.50"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "4.50",
+                                        "Precio_Venta" : "7.50"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "5",
+                                        "Precio_Venta" : "8"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "8",
+                                        "Precio_Venta" : "16"
+                                } 
+                        ]
+                },
+                {
+                        "Paramount Plus" :
+                        [
+                                
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "3.50",
+                                        "Precio_Venta" : "4.50"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "5",
+                                        "Precio_Venta" : "8"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "8",
+                                        "Precio_Venta" : "16"
+                                }
+                        ]
+                },
+                {
+                        "Crunchyroll" :
+                        [
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "4.50",
+                                        "Precio_Venta" : "6"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "7",
+                                        "Precio_Venta" : "12"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "5",
+                                        "Precio_Venta" : "9"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "7.50",
+                                        "Precio_Venta" : "18"
+                                }
+                        ]
+                },
+                {
+                        "Star+" :
+                        [
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "3.50",
+                                        "Precio_Venta" : "5"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "5.50",
+                                        "Precio_Venta" : "10"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "6.50",
+                                        "Precio_Venta" : "8"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "12",
+                                        "Precio_Venta" : "16"
+                                }
+                        ]
+                },
+                {
+                        "Tele Latino" :
+                        [
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "4.50",
+                                        "Precio_Venta" : "5.50"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "2 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "5.50",
+                                        "Precio_Venta" : "7"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "3 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "6.50",
+                                        "Precio_Venta" : "8"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "4 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "7.50",
+                                        "Precio_Venta" : "9"
+                                }
+                        ]
+                },
+                {
+                        "Spotify" :
+                        [
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "30 Dias",
+                                        "Precio_Compra" : "4",
+                                        "Precio_Venta" : "5"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "60 Dias",
+                                        "Precio_Compra" : "5",
+                                        "Precio_Venta" : "7"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "6",
+                                        "Precio_Venta" : "10"
+                                },
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "6 Meses",
+                                        "Precio_Compra" : "10",
+                                        "Precio_Venta" : "16"
+                                }
+                        ]
+                },
+                {
+                        "Youtube" :
+                        [
+                                {
+                                        "imagen" : "direccion",
+                                        "Tipo": "1 Dispositivos en simultaneo",
+                                        "Duraccion" : "3 Meses",
+                                        "Precio_Compra" : "8",
+                                        "Precio_Venta" : "10"
+                                }
+                        ]
+                }
+        ]
+}
