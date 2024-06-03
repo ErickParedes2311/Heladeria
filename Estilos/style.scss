@@ -3,36 +3,36 @@
 .content_cuerpo
 {
         margin-top: 20px;
-        .sect_introduccion
+        .section
         {
                 padding: 25px 10%;
                 display: flex;
                 align-items: center;
-                .introduccion_text
+                .section_descripcion
                 {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        .introduccion_text_titulo
+                        .section_titulo
                         {
                                 font-size: 2.5em;
                                 span{
                                         color: $color_principal;
-                                        text-shadow: 0px 0px 10px $color_principal;
+                                        text-shadow: 0px 0px 4px $color_principal;
                                 }
                         }
-                        .introduccion_text_parrafo
+                        .section_descripcion
                         {
                                 
                                 margin: 20px 0;
                         }
-                        .introduccion_content_btn
+                        .section_btn
                         {
                                 margin-left: 10px;
-                                .btn_introduccion
+                                .btn
                                 {
                                         border: none;
-                                        border-radius: 12px 0px;
+                                        border-radius: 15px;
                                         padding: 7px 15px;
                                         text-align: center;
                                         text-decoration: none;
@@ -41,84 +41,173 @@
                                         background-color: $color_principal;
                                         color: white;
                                         font-weight: 600;
+                                        animation: scale 0.5s ease;
                                         &:hover{
                                                 box-shadow: 3px 2px 5px $color_principal;
                                         }
                                 }
                         }
                 }
-                .introduccion_img
+                .section_imagen
                 {
                         width: 10em;
                         height: 10em;
                 }
         }
-        .sect_nosotros
+
+        // .section_1
+
+        .section_2
         {
                 background: $color_secundario;
                 margin-top: 30px;
-                .introduccion_text
+                .section_descripcion
                 {
                         display: flex;
                         justify-content: center;
                         padding: 0 10px;
                 }
-                .introduccion_img
+                .section_imagen
                 {
-                        margin-right: 15px;
-                        width: 250px;
-                        height: auto;
+                        margin-right: 10px;
+                }
+        }
+
+        .section_3
+        {
+                padding: 25px 3%;
+                display: flex;
+                flex-direction: column;
+                .section_titulo
+                {
+                        text-align: center;
+                        color: $color_principal;
+                        text-shadow: 0px 0px 4px $color_principal;
+                        font-size: 2.5em;
+                        margin-bottom: 10px
+                }
+                .card_productos
+                {
+                        display: flex;
+                        flex-direction: row;
+                        overflow: hidden;
+                        overflow-x: auto;
+                        padding: 10px 0;
+                        cursor: pointer;
+                        scrollbar-width: thin;
+                        scrollbar-color: $color_principal transparent;
+                        /* Webkit browsers */
+                                &::-webkit-scrollbar {
+                                        height: 10px; /* Adjust the height of the scrollbar */
+                                }
+                                
+                                &::-webkit-scrollbar-track {
+                                        background: transparent; /* Color de fondo de la barra de desplazamiento */
+                                }
+                        .producto
+                        {
+                                min-width: 250px;
+                                height: max-content;
+                                background-color: $color_secundario;
+                                box-shadow: 0 4px 8px $color_secundario;
+                                overflow: hidden;
+                                transition: all 0.3s ease;
+                                border-radius: 10px;
+                                border: 1px solid #5f4a4a24;
+                                padding: 10px 15px;
+                                margin-right: 20px;
+                                &:hover{
+                                        background-image: url('/Imagenes/fomdo rosa.jpg'); 
+                                        background-size: cover;
+                                        background-position: center; 
+                                        transform: scale(1.10);
+                                        color: white;
+                                        &::before {
+                                                content: "";
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 100%;
+                                                height: 100%;
+                                                background-color: rgba(0, 0, 0, 0.3); /* Color oscuro semi-transparente */
+                                                border-radius: 10px;
+                                                z-index: -1;
+                                            }
+                                }
+                                .producto_imagen
+                                {
+                                        width: max-content;
+                                        padding: 5px;
+                                        background-color: white;
+                                        border-radius: 50%;
+                                        .p_imagen
+                                        {
+                                                width: 30px;
+                                        }
+                                }
+                                .detalles
+                                {
+                                        overflow: hidden;
+                                        width: 100%;
+                                        .detalles_titulo
+                                        {
+                                                font-size: .9em;
+                                        }
+                                        .detalles_descripcion
+                                        {
+                                                font-size: .7em;
+                                        }
+                                }
+                        }
                 }
         }
 }
+
+@keyframes scale {
+        0% {
+          -webkit-transform: scale(0);
+                  transform: scale(0);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          opacity: 1;
+        }
+      }
 
 @media (max-width: 800px) {
         .content_cuerpo
         {
-                .sect_introduccion
+                .section_3
                 {
-                        padding: 50px 15px;
-                        .introduccion_text
-                        {
-                                .introduccion_text_titulo
-                                {
-                                        font-size: 2em;
-                                }
-                        }
+                        padding: 15px 0px;
                 }
         }
-}
-
+      }
 @media (max-width: 650px) {
         .content_cuerpo
         {
-                .sect_introduccion
+                .section
                 {
                         padding: 15px 10px;
                         display: flex;
                         justify-content: center;
-                        .introduccion_text
+                        .section_descripcion
                         {
-                                .introduccion_text_titulo
+                                .section_titulo
                                 {
-                                        font-size: 1em;
+                                        font-size: 2em;
                                 }
-                                .introduccion_text_parrafo
+                                .section_descripcion
                                 {
-                                        font-size: .8em;
+                                        font-size: .9em;
                                 }
                         }
-                        .introduccion_img
+                        .section_imagen
                         {
                                 width: 150px;
                                 height: auto;
-                        }
-                }
-                .sect_nosotros
-                {
-                        .introduccion_text
-                        {
-                                padding: 0 0px;
                         }
                 }
         }

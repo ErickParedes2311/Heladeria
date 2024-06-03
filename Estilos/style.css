@@ -38,32 +38,32 @@ img {
 .content_cuerpo {
   margin-top: 20px;
 }
-.content_cuerpo .sect_introduccion {
+.content_cuerpo .section {
   padding: 25px 10%;
   display: flex;
   align-items: center;
 }
-.content_cuerpo .sect_introduccion .introduccion_text {
+.content_cuerpo .section .section_descripcion {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.content_cuerpo .sect_introduccion .introduccion_text .introduccion_text_titulo {
+.content_cuerpo .section .section_descripcion .section_titulo {
   font-size: 2.5em;
 }
-.content_cuerpo .sect_introduccion .introduccion_text .introduccion_text_titulo span {
+.content_cuerpo .section .section_descripcion .section_titulo span {
   color: #ec5f5f;
-  text-shadow: 0px 0px 10px #ec5f5f;
+  text-shadow: 0px 0px 4px #ec5f5f;
 }
-.content_cuerpo .sect_introduccion .introduccion_text .introduccion_text_parrafo {
+.content_cuerpo .section .section_descripcion .section_descripcion {
   margin: 20px 0;
 }
-.content_cuerpo .sect_introduccion .introduccion_text .introduccion_content_btn {
+.content_cuerpo .section .section_descripcion .section_btn {
   margin-left: 10px;
 }
-.content_cuerpo .sect_introduccion .introduccion_text .introduccion_content_btn .btn_introduccion {
+.content_cuerpo .section .section_descripcion .section_btn .btn {
   border: none;
-  border-radius: 12px 0px;
+  border-radius: 15px;
   padding: 7px 15px;
   text-align: center;
   text-decoration: none;
@@ -73,54 +73,137 @@ img {
   background-color: #ec5f5f;
   color: white;
   font-weight: 600;
+  animation: scale 0.5s ease;
 }
-.content_cuerpo .sect_introduccion .introduccion_text .introduccion_content_btn .btn_introduccion:hover {
+.content_cuerpo .section .section_descripcion .section_btn .btn:hover {
   box-shadow: 3px 2px 5px #ec5f5f;
 }
-.content_cuerpo .sect_introduccion .introduccion_img {
+.content_cuerpo .section .section_imagen {
   width: 10em;
   height: 10em;
 }
-.content_cuerpo .sect_nosotros {
-  background: rgba(236, 95, 95, 0.0588235294);
+.content_cuerpo .section_2 {
+  background: #f9e5df;
   margin-top: 30px;
 }
-.content_cuerpo .sect_nosotros .introduccion_text {
+.content_cuerpo .section_2 .section_descripcion {
   display: flex;
   justify-content: center;
   padding: 0 10px;
 }
-.content_cuerpo .sect_nosotros .introduccion_img {
-  margin-right: 15px;
-  width: 250px;
-  height: auto;
+.content_cuerpo .section_2 .section_imagen {
+  margin-right: 10px;
+}
+.content_cuerpo .section_3 {
+  padding: 25px 3%;
+  display: flex;
+  flex-direction: column;
+}
+.content_cuerpo .section_3 .section_titulo {
+  text-align: center;
+  color: #ec5f5f;
+  text-shadow: 0px 0px 4px #ec5f5f;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.content_cuerpo .section_3 .card_productos {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-x: auto;
+  padding: 10px 0;
+  cursor: pointer;
+  scrollbar-width: thin;
+  scrollbar-color: #ec5f5f transparent;
+  /* Webkit browsers */
+}
+.content_cuerpo .section_3 .card_productos::-webkit-scrollbar {
+  height: 10px; /* Adjust the height of the scrollbar */
+}
+.content_cuerpo .section_3 .card_productos::-webkit-scrollbar-track {
+  background: transparent; /* Color de fondo de la barra de desplazamiento */
+}
+.content_cuerpo .section_3 .card_productos .producto {
+  min-width: 250px;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #f9e5df;
+  box-shadow: 0 4px 8px #f9e5df;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  border: 1px solid rgba(95, 74, 74, 0.1411764706);
+  padding: 10px 15px;
+  margin-right: 20px;
+}
+.content_cuerpo .section_3 .card_productos .producto:hover {
+  background-image: url("/Imagenes/fomdo rosa.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.1);
+  color: white;
+}
+.content_cuerpo .section_3 .card_productos .producto:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Color oscuro semi-transparente */
+  border-radius: 10px;
+  z-index: -1;
+}
+.content_cuerpo .section_3 .card_productos .producto .producto_imagen {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+.content_cuerpo .section_3 .card_productos .producto .producto_imagen .p_imagen {
+  width: 30px;
+}
+.content_cuerpo .section_3 .card_productos .producto .detalles {
+  overflow: hidden;
+  width: 100%;
+}
+.content_cuerpo .section_3 .card_productos .producto .detalles .detalles_titulo {
+  font-size: 0.9em;
+}
+.content_cuerpo .section_3 .card_productos .producto .detalles .detalles_descripcion {
+  font-size: 0.7em;
 }
 
-@media (max-width: 800px) {
-  .content_cuerpo .sect_introduccion {
-    padding: 50px 15px;
+@keyframes scale {
+  0% {
+    transform: scale(0);
+    opacity: 1;
   }
-  .content_cuerpo .sect_introduccion .introduccion_text .introduccion_text_titulo {
-    font-size: 2em;
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media (max-width: 800px) {
+  .content_cuerpo .section_3 {
+    padding: 15px 0px;
   }
 }
 @media (max-width: 650px) {
-  .content_cuerpo .sect_introduccion {
+  .content_cuerpo .section {
     padding: 15px 10px;
     display: flex;
     justify-content: center;
   }
-  .content_cuerpo .sect_introduccion .introduccion_text .introduccion_text_titulo {
-    font-size: 1em;
+  .content_cuerpo .section .section_descripcion .section_titulo {
+    font-size: 2em;
   }
-  .content_cuerpo .sect_introduccion .introduccion_text .introduccion_text_parrafo {
-    font-size: 0.8em;
+  .content_cuerpo .section .section_descripcion .section_descripcion {
+    font-size: 0.9em;
   }
-  .content_cuerpo .sect_introduccion .introduccion_img {
+  .content_cuerpo .section .section_imagen {
     width: 150px;
     height: auto;
-  }
-  .content_cuerpo .sect_nosotros .introduccion_text {
-    padding: 0 0px;
   }
 }/*# sourceMappingURL=style.css.map */
