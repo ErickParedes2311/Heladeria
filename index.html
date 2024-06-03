@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Estilos/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <title>Tirulo</title>
+        <script>
+                function loadNav() {
+                    fetch('indexNAV.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('nav-placeholder').innerHTML = data;
+                        });
+                }
+            </script>
+</head>
+<body onload="loadNav()">
+        <div id="nav-placeholder"></div>
+        <main class="content_cuerpo">
+                <section>
+                        <div class="text">
+                                <h1>Fantasía Helada</h1>
+                                <p>Bienvenidos a Fantasía Helada , donde cada cucharada es una aventura de sabores! Ubicada en el corazón de la ciudad, nuestra heladería destaca por su creatividad sin límites y su compromiso con la calidad. Desde nuestras creaciones clásicas hasta combinaciones exóticas que desafían el paladar, cada helado es elaborado en nuestra fábrica con ingredientes frescos y naturales, sin colorantes ni conservantes artificiales. Ven y descubre nuestras exclusivas ediciones limitadas, inspiradas en las estaciones y festividades del año, que te transportarán a mundos de fantasía con cada bocado. ¡En Fantasía Helada , la magia está en el sabor y cada día es una nueva oportunidad para sorprenderte!</p>
+                        </div>
+                        <img src="/Imagenes/cuerpo.png" alt="">
+                </section>
+        </main>
+        <script src="Mecanica/script.js"></script>
+</body>
+</html>
