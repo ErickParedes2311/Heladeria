@@ -2,11 +2,12 @@
 
 .content_cuerpo
 {
-        padding: 0px 10px;
+        margin-top: 20px;
         .sect_introduccion
         {
-                padding: 25px 7%;
+                padding: 25px 10%;
                 display: flex;
+                align-items: center;
                 .introduccion_text
                 {
                         display: flex;
@@ -16,14 +17,14 @@
                         {
                                 font-size: 2.5em;
                                 span{
-                                        color: $color_text;
-                                        text-shadow: 0px 0px 10px $color_text;
+                                        color: $color_principal;
+                                        text-shadow: 0px 0px 10px $color_principal;
                                 }
                         }
                         .introduccion_text_parrafo
                         {
                                 
-                                margin: 10px 0;
+                                margin: 20px 0;
                         }
                         .introduccion_content_btn
                         {
@@ -37,11 +38,11 @@
                                         text-decoration: none;
                                         height: max-content;
                                         cursor: pointer;
-                                        background-color: $color_text;
+                                        background-color: $color_principal;
                                         color: white;
                                         font-weight: 600;
                                         &:hover{
-                                                box-shadow: 3px 2px 5px $color_text;
+                                                box-shadow: 3px 2px 5px $color_principal;
                                         }
                                 }
                         }
@@ -50,6 +51,23 @@
                 {
                         width: 10em;
                         height: 10em;
+                }
+        }
+        .sect_nosotros
+        {
+                background: $color_secundario;
+                margin-top: 30px;
+                .introduccion_text
+                {
+                        display: flex;
+                        justify-content: center;
+                        padding: 0 10px;
+                }
+                .introduccion_img
+                {
+                        margin-right: 15px;
+                        width: 250px;
+                        height: auto;
                 }
         }
 }
@@ -76,7 +94,7 @@
         {
                 .sect_introduccion
                 {
-                        padding: 15px 0px;
+                        padding: 15px 10px;
                         display: flex;
                         justify-content: center;
                         .introduccion_text
@@ -89,6 +107,18 @@
                                 {
                                         font-size: .8em;
                                 }
+                        }
+                        .introduccion_img
+                        {
+                                width: 150px;
+                                height: auto;
+                        }
+                }
+                .sect_nosotros
+                {
+                        .introduccion_text
+                        {
+                                padding: 0 0px;
                         }
                 }
         }
