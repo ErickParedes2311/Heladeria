@@ -35,12 +35,9 @@
     .li_enlaces{
         &:hover{
             color: #ec5f5f;
+            text-shadow: 3px 1px 4px #ec5f5f;
         }
     }
-
-    a.active{
-            color: #ec5f5f;
-        }
     .btn_contacto{
         border: none;
         border-radius: 12px 0px;
@@ -55,32 +52,12 @@
 
 </style>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Obtener todos los enlaces de navegación
-        const navLinks = document.querySelectorAll(".li_enlaces");
-
-        // Obtener la URL actual
-        const currentUrl = window.location.href;
-
-        // Iterar sobre cada enlace
-        navLinks.forEach(link => {
-            // Si el href del enlace coincide con la URL actual, agregar la clase "active"
-            if (link.href === currentUrl) {
-                link.classList.add("active");
-            }
-        });
-    });
-</script>
-
-
-
 <header>
-    <img class="header_img" src="/nuevop/Imagenes/cucurucho-de-helado.png" alt="icon_cucurucho-de-helado">
+    <img class="header_img" src="/Imagenes/cucurucho-de-helado.png" alt="icon_cucurucho-de-helado">
     <nav class="nav_navegation">
         <ul class="nav_ul">
-            <li class="ul__li active"><a class="li_enlaces" href="#">Inicio</a></li>
-            <li class="ul__li"><a class="li_enlaces" href="#">Nosotros</a></li>
+            <li class="ul__li"><a class="li_enlaces" href="index.html">Inicio</a></li>
+            <li class="ul__li"><a class="li_enlaces" href="nosotros.html">Nosotros</a></li>
             <li class="ul__li"><a class="li_enlaces" href="#">Noticias</a></li>
         </ul>
     </nav>
