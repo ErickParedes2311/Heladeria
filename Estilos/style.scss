@@ -1,8 +1,49 @@
 @import '../reutilizables/formateo';
+@keyframes scale
+        {
+                0% {
+                -webkit-transform: scale(0);
+                        transform: scale(0);
+                opacity: 1;
+                }
+                100% {
+                -webkit-transform: scale(1);
+                        transform: scale(1);
+                opacity: 1;
+                }
+        }
+@keyframes derecha 
+        {
+                0% {
+                -webkit-transform: translateX(1000px);
+                        transform: translateX(1000px);
+                opacity: 0;
+                }
+                100% {
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                opacity: 1;
+                }
+        }
 
+@keyframes izquierda 
+        {
+                0% {
+                -webkit-transform: translateX(-1000px);
+                        transform: translateX(-1000px);
+                opacity: 0;
+                }
+                100% {
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                opacity: 1;
+                }
+        }
+
+        
 .content_cuerpo
 {
-        margin-top: 20px;
+        margin-top: 40px;
         .section
         {
                 padding: 25px 10%;
@@ -55,12 +96,18 @@
                 }
         }
 
-        // .section_1
+        .section_1
+        {
+                margin-top: 25px;
+                animation: derecha 1s ease;
+        }
 
         .section_2
         {
+                margin-top: 25px;
                 background: $color_secundario;
                 margin-top: 30px;
+                animation: izquierda 1s ease;
                 .section_descripcion
                 {
                         display: flex;
@@ -75,6 +122,7 @@
 
         .section_3
         {
+                margin-top: 25px;
                 padding: 25px 3%;
                 display: flex;
                 flex-direction: column;
@@ -161,54 +209,169 @@
                         }
                 }
         }
-}
 
-@keyframes scale {
-        0% {
-          -webkit-transform: scale(0);
-                  transform: scale(0);
-          opacity: 1;
-        }
-        100% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-          opacity: 1;
-        }
-      }
-
-@media (max-width: 800px) {
-        .content_cuerpo
+        .section_4
         {
-                .section_3
-                {
-                        padding: 15px 0px;
+                margin-top: 25px;
+                padding: 0 15px;
+                .titulo{
+                        font-size: 2em;
+                        span{
+                                color: $color_principal;
+                                text-shadow: 0px 0px 4px $color_principal;
+                        }
                 }
-        }
-      }
-@media (max-width: 650px) {
-        .content_cuerpo
-        {
-                .section
+                .text{font-size: .8em;}
+                .content_detalles
                 {
-                        padding: 15px 10px;
                         display: flex;
-                        justify-content: center;
-                        .section_descripcion
+                        .detalles
                         {
-                                .section_titulo
+                                flex: auto 1 1;
+                                .detll
                                 {
-                                        font-size: 2em;
-                                }
-                                .section_descripcion
-                                {
-                                        font-size: .9em;
+                                        display: flex;
+                                        align-items: center;
+                                        margin: 20px;
+                                        .detalles_cont_imagen
+                                        {
+                                                background-color: $color_principal;
+                                                min-width: 50px ;
+                                                min-height: 50px;
+                                                max-width: 50px ;
+                                                max-height: 50px;
+                                                border-radius: 50%;
+                                                @include centrarVertical;
+                                                margin-right: 15px;
+                                                .detalle_img
+                                                {
+                                                        width: 35px;
+                                                }
+                                        }
+                                        .info
+                                        {
+                                                font-size: .9em;
+                                        }
                                 }
                         }
-                        .section_imagen
+                        .detalles_imagen_4
                         {
                                 width: 150px;
-                                height: auto;
+                                margin-right: 50px;
                         }
+                        
                 }
         }
 }
+
+
+
+@media (max-width: 800px) 
+        {
+                .content_cuerpo
+                {
+                        .section_3
+                        {
+                                padding: 15px 0px;
+                        }
+                        .section_4
+                        {
+                                .content_detalles
+                                {
+                                        .detalles
+                                        {
+                                                .detll
+                                                {
+                                                        margin: 10px;
+                                                        .detalles_cont_imagen
+                                                        {
+                                                                min-width: 25px ;
+                                                                min-height: 25px;
+                                                                max-width: 25px ;
+                                                                max-height: 25px;
+                                                                border-radius: 50%;
+                                                                @include centrarVertical;
+                                                                margin-right: 7px;
+                                                                .detalle_img
+                                                                {
+                                                                        width: 20px;
+                                                                }
+                                                        }
+                                                        .info
+                                                        {
+                                                                font-size: .7em;
+                                                        }
+                                                }
+                                        }
+                                        .detalles_imagen_4
+                                        {
+                                                width: 90px;
+                                                margin-right: 20px;
+                                        }
+                                        
+                                }
+                        }
+                }
+        }
+@media (max-width: 650px) 
+        {
+                .content_cuerpo
+                {
+                        .section
+                        {
+                                padding: 15px 10px;
+                                display: flex;
+                                justify-content: center;
+                                .section_descripcion
+                                {
+                                        .section_titulo
+                                        {
+                                                font-size: 2em;
+                                        }
+                                        .section_descripcion
+                                        {
+                                                font-size: .9em;
+                                        }
+                                }
+                                .section_imagen
+                                {
+                                        width: 150px;
+                                        height: auto;
+                                }
+                        }
+                        .section_4
+                        {
+                                .content_detalles
+                                {
+                                display: flex;
+                                align-items: center;
+                                        .detalles
+                                        {
+                                                .detll
+                                                {
+                                                        .detalles_cont_imagen
+                                                        {
+                                                                .detalle_img
+                                                                {
+                                                                }
+                                                        }
+                                                        .info
+                                                        {
+                                                                .text_detalles
+                                                                {
+                                                                display: none;
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                        .detalles_imagen_4
+                                        {
+                                                width: 70px;
+                                                height: 90px;
+                                                margin-right: 0;
+                                        }
+                                        
+                                }
+                        }
+                }
+        }

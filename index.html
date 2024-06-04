@@ -10,7 +10,7 @@
         <title>Tirulo</title>
         <script>
                 function loadNav() {
-                    fetch('indexNAV.html')
+                    fetch('/nav/indexNAV.html')
                         .then(response => response.text())
                         .then(data => {
                             document.getElementById('nav-placeholder').innerHTML = data;
@@ -92,13 +92,38 @@
 
                 <section class="section_4">
                         <h3 class="titulo">¿Porque eleguir nuestros <span>Helados</span>?</h3>
-                        <p class="text">cuidadosamente elaborados con los mejores ingredientes, garantizando frescura y calidad en cada sabor. Nos apasiona innovar, por eso nuestras combinaciones únicas y deliciosas te sorprenderán y deleitarán. Además, cada helado de Fantasía Helada es un viaje sensorial que te lleva a un mundo de creatividad y placer, perfecto para cualquier ocasión.</p>
+                        <p class="text">Cuidadosamente elaborados con los mejores ingredientes, garantizando frescura y calidad en cada sabor. Nos apasiona innovar, por eso nuestras combinaciones únicas y deliciosas te sorprenderán y deleitarán. Además, cada helado de Fantasía Helada es un viaje sensorial que te lleva a un mundo de creatividad y placer, perfecto para cualquier ocasión.</p>
                         <div class="content_detalles">
-                                <img src="/Imagenes/cafe-frio.png" alt="">
                                 <div class="detalles">
-                                        <h3 class="titulo_detalles">uno</h3>
-                                        <p class="text_detalles">detalles</p>
+                                        <div class="detll detalle_1">
+                                                <div class="detalles_cont_imagen">
+                                                        <img class="detalle_img" src="/Imagenes/icon_helado.svg" alt="">
+                                                </div>
+                                                <div class="info">
+                                                        <h3 class="titulo_detalles">Postre congelado</h3>
+                                                        <p class="text_detalles">una base de crema de leche, que se mezcla y se congela hasta obtener una textura suave y cremosa.</p>
+                                                </div>
+                                        </div>
+                                        <div class="detll detalle_2">
+                                                <div class="detalles_cont_imagen">
+                                                        <img class="detalle_img" src="/Imagenes/icon_helado.svg" alt="">
+                                                </div>
+                                                <div class="info">
+                                                        <h3 class="titulo_detalles">Capacidad para combinarse </h3>
+                                                        <p class="text_detalles">Una amplia variedad de sabores y mezclas, desde frutas y nueces hasta chocolate y licores. Se puede servir solo o acompañado.</p>
+                                                </div>
+                                        </div>
+                                        <div class="detll detalle_3">
+                                                <div class="detalles_cont_imagen">
+                                                        <img class="detalle_img" src="/Imagenes/icon_helado.svg" alt="">
+                                                </div>
+                                                <div class="info">
+                                                        <h3 class="titulo_detalles">Helado de crema es un producto popular</h3>
+                                                        <p class="text_detalles"> El mercado de postres, disponible en numerosos sabores y presentaciones.</p>
+                                                </div>
+                                        </div>
                                 </div>
+                                <img class="detalles_imagen_4" src="/Imagenes/cafe-frio.png" alt="">
                         </div>
                 </section>
 

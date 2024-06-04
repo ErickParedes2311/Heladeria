@@ -10,7 +10,7 @@
         <title>Tirulo</title>
         <script>
                 function loadNav() {
-                    fetch('indexNAV.html')
+                    fetch('/nav/indexNAV.html')
                         .then(response => response.text())
                         .then(data => {
                             document.getElementById('nav-placeholder').innerHTML = data;
