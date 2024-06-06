@@ -14,10 +14,6 @@ a {
   text-decoration: none;
 }
 
-svg {
-  width: 20px;
-}
-
 button {
   border: none;
   padding: 1px 1px;
@@ -119,7 +115,6 @@ img {
 .content_cuerpo .section_2 {
   margin-top: 25px;
   background: #f9e5df;
-  margin-top: 30px;
   animation: izquierda 1s ease;
 }
 .content_cuerpo .section_2 .section_descripcion {
@@ -132,7 +127,7 @@ img {
 }
 .content_cuerpo .section_3 {
   margin-top: 25px;
-  padding: 25px 3%;
+  padding: 25px 10%;
   display: flex;
   flex-direction: column;
 }
@@ -177,7 +172,7 @@ img {
   background-image: url("/Imagenes/fomdo rosa.jpg");
   background-size: cover;
   background-position: center;
-  transform: scale(1.1);
+  transform: scale(1.01);
   color: white;
 }
 .content_cuerpo .section_3 .card_productos .producto:hover::before {
@@ -213,7 +208,7 @@ img {
 }
 .content_cuerpo .section_4 {
   margin-top: 25px;
-  padding: 0 15px;
+  padding: 25px 10%;
 }
 .content_cuerpo .section_4 .titulo {
   font-size: 2em;

@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: lighter;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+img {
+  width: 100px;
+}
+
+.content_footer {
+  background: rgb(43, 43, 43);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 120px;
+}
+.content_footer .nombre, .content_footer .helados, .content_footer .redes_sociales, .content_footer .email {
+  border-right: 1px solid rgb(192, 192, 192);
+  flex: 0px 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
+}
+.content_footer .nombre {
+  padding-left: 10px;
+}
+.content_footer .nombre h2 {
+  font-size: 0.9em;
+  letter-spacing: 2px;
+}
+.content_footer .nombre b {
+  font-size: 1em;
+  color: rgb(192, 192, 192);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.content_footer .nombre p {
+  font-size: 0.7em;
+  margin-top: 10px;
+}
+.content_footer .helados {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.content_footer .helados .claro {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.content_footer .helados .oscuro {
+  display: flex;
+  flex-direction: column;
+  color: rgb(192, 192, 192);
+}/*# sourceMappingURL=style.css.map */
