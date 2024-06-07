@@ -131,6 +131,9 @@ img {
   padding: 25px 10%;
   display: flex;
   flex-direction: column;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .content_cuerpo .section_3 .section_titulo {
   text-align: center;
@@ -258,7 +261,10 @@ img {
 
 @media (max-width: 800px) {
   .content_cuerpo .section_3 {
-    padding: 15px 0px;
+    padding: 0px 0px;
+  }
+  .content_cuerpo .section_4 {
+    padding: 0px 15px;
   }
   .content_cuerpo .section_4 .content_detalles .detalles .detll {
     margin: 10px;

@@ -10,17 +10,19 @@
         <title>Tirulo</title>
         <script>
                 function loadNav() {
-                    fetch('/nav/indexNAV.html')
-                        .then(response => response.text())
-                        .then(data => {
-                            document.getElementById('nav-placeholder').innerHTML = data;
-                        });
+                        fetch('/nav/indexNAV.html')
+                                .then(response => response.text())
+                                .then(data => {
+                                const navPlaceholder = document.getElementById('nav-placeholder');
+                                navPlaceholder.innerHTML = data;
+                                });
 
                         fetch('/footer/footer.html')
                                 .then(response => response.text())
                                 .then(data => {
-                                document.getElementById('footer-placeholder').innerHTML = data;
-                        });
+                                const footerPlaceholder = document.getElementById('footer-placeholder');
+                                footerPlaceholder.innerHTML = data;
+                                });
                 }
                 document.addEventListener("DOMContentLoaded", loadNav);
             </script>

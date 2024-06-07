@@ -125,6 +125,7 @@
                 padding: 25px 10%;
                 display: flex;
                 flex-direction: column;
+                user-select: none;
                 .section_titulo
                 {
                         text-align: center;
@@ -271,10 +272,11 @@
                 {
                         .section_3
                         {
-                                padding: 15px 0px;
+                                padding: 0px 0px;
                         }
                         .section_4
                         {
+                                padding: 0px 15px;
                                 .content_detalles
                                 {
                                         .detalles

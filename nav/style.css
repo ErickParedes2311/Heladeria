@@ -93,67 +93,7 @@ header .content_nav_responsive .btn_contacto {
 }
 
 @media (max-width: 600px) {
-  header {
-    padding: 10px 5px;
-  }
-  header .content_nav_responsive {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  header .content_nav_responsive .btn_amburgesa {
-    display: inline-block;
-    font-size: 1.5em;
-    color: #ec5f5f;
-    padding: 0 5px;
-  }
-  header .content_nav_responsive .nav_navegation, header .content_nav_responsive .btn_contacto {
+  header h1 {
     display: none;
-  }
-  header .cerrar {
-    position: absolute;
-    padding-top: 10px;
-    background: #f9e5df;
-    height: -moz-max-content;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  header .cerrar .btn_amburgesa {
-    font-size: 1.5em;
-    padding: 5px 5px;
-    margin-right: 15px;
-    transform: rotate(90deg);
-  }
-  header .cerrar .nav_navegation, header .cerrar .btn_contacto {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  header .cerrar .nav_navegation {
-    margin: 10px 0 0 0;
-    width: 100%;
-  }
-  header .cerrar .nav_navegation .nav_ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  header .cerrar .nav_navegation .nav_ul .ul__li {
-    width: 100%;
-    font-size: 1.2em;
-    border-top: 1px solid rgba(0, 0, 0, 0.564);
-    margin: 0;
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 10px 15px;
-  }
-  header .cerrar .btn_contacto {
-    width: 100%;
-    border-radius: 0;
-    padding: 10px 0;
   }
 }/*# sourceMappingURL=style.css.map */

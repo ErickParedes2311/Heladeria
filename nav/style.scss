@@ -71,73 +71,8 @@
     @media (max-width: 600px) 
     {
         header{
-            padding: 10px 5px;
-            .content_nav_responsive
-            {
-                display: flex;
-                flex-direction: row-reverse;
-                .btn_amburgesa
-                {
-                    display: inline-block;
-                    font-size: 1.5em;
-                    color: $color_principal;
-                    padding: 0 5px;
-                }
-                .nav_navegation, .btn_contacto
-                {
-                    display: none
-                }
-            }
-            .cerrar
-            {
-                position: absolute;
-                padding-top: 10px;
-                background: $color_secundario;
-                height: max-content;
-                display: flex;
-                flex-direction: column;
-                align-items: end;
-                justify-content: space-evenly;
-                position: absolute;
-                top: 0;
-                left: 0;
-                .btn_amburgesa
-                {
-                    font-size: 1.5em;
-                    padding: 5px 5px;
-                    margin-right: 15px ;
-                    transform: rotate(90deg);
-                }
-                .nav_navegation, .btn_contacto
-                {
-                    display: flex;
-                    flex-direction: column-reverse;
-                }
-                .nav_navegation
-                {
-                    margin: 10px  0 0 0;
-                    width: 100%;
-                    .nav_ul{
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        .ul__li{
-                            width: 100%;
-                            font-size: 1.2em;
-                            border-top: 1px solid rgba(0, 0, 0, 0.564);
-                            margin: 0;
-                            display: flex;
-                            flex-direction: row-reverse;
-                            padding: 10px 15px;
-                        }
-                    }
-                }
-                .btn_contacto
-                {
-                    width: 100%;
-                    border-radius: 0;
-                    padding: 10px 0;
-                }
+            h1{
+                display: none ;
             }
         }
     }
