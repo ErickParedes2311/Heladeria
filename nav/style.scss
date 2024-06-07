@@ -1,61 +1,143 @@
 @import '../reutilizables/formateo';
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    a{
-        text-decoration: none;
-        color: black;
-    }
     header{
         background-color: $color_secundario;
         display: flex;
         align-items: center;
         padding: 10px 10px;
+        z-index: 1000;
         .header_img
         {
             flex: 1 1 1;
             width: 35px;
         }    
-        .titulo_page{
+        .titulo_page
+        {
             font-size: 1em;
         }
-        .nav_navegation
+        .content_nav_responsive
         {
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-        }    
-        .nav_ul{
+            width: 100%;
             display: flex;
-        }
-        .ul__li{
-            list-style-type: none;
-            margin: 0 10px;
-            cursor: pointer;
-        }
-        .li_enlaces
-        {
+            align-items: center;
+            
+            .btn_amburgesa
+            {
+                display: none;
+            }
+            .nav_navegation
+            {
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center; 
+                    .nav_ul{
+                        display: flex;
+                    }
+                            
+                    .ul__li{
+                        list-style-type: none;
+                        margin: 0 10px;
+                        cursor: pointer;
+                    }
+                    .li_enlaces
+                    {
+                            font-size: 1em;
+                            font-weight: 600;
+                        &:hover{
+                            color: $color_principal;
+                            text-shadow: 0px 0px 2px $color_principal;
+                        }
+                    }
+            }    
+            .btn_contacto
+            {
+                display: flex;
+                align-items: center;
+                border: none;
+                border-radius: 12px 0px;
                 font-size: 1em;
-                font-weight: 800;
-            &:hover{
-                color: $color_principal;
-                text-shadow: 0px 0px 2px $color_principal;
+                font-weight: 550;
+                letter-spacing: .5px;
+                padding: 5px 10px;
+                text-decoration: none;
+                height: max-content;
+                cursor: pointer;
+                background-color: $color_principal;
+                color: white;
             }
         }
-
-        .btn_contacto
-        {
-            border: none;
-            border-radius: 12px 0px;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            height: max-content;
-            cursor: pointer;
-            background-color: $color_principal;
-            color: white;
-        }
+        
     }
 
+    @media (max-width: 600px) 
+    {
+        header{
+            padding: 10px 5px;
+            .content_nav_responsive
+            {
+                display: flex;
+                flex-direction: row-reverse;
+                .btn_amburgesa
+                {
+                    display: inline-block;
+                    font-size: 1.5em;
+                    color: $color_principal;
+                    padding: 0 5px;
+                }
+                .nav_navegation, .btn_contacto
+                {
+                    display: none
+                }
+            }
+            .cerrar
+            {
+                position: absolute;
+                padding-top: 10px;
+                background: $color_secundario;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                justify-content: space-evenly;
+                position: absolute;
+                top: 0;
+                left: 0;
+                .btn_amburgesa
+                {
+                    font-size: 1.5em;
+                    padding: 5px 5px;
+                    margin-right: 15px ;
+                    transform: rotate(90deg);
+                }
+                .nav_navegation, .btn_contacto
+                {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+                .nav_navegation
+                {
+                    margin: 10px  0 0 0;
+                    width: 100%;
+                    .nav_ul{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        .ul__li{
+                            width: 100%;
+                            font-size: 1.2em;
+                            border-top: 1px solid rgba(0, 0, 0, 0.564);
+                            margin: 0;
+                            display: flex;
+                            flex-direction: row-reverse;
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+                .btn_contacto
+                {
+                    width: 100%;
+                    border-radius: 0;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }

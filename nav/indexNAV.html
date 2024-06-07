@@ -1,26 +1,24 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/nav/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
         <title>nav</title>
 </head>
 <body>
     <header>
         <img class="header_img" src="/Imagenes/cucurucho-de-helado.png" alt="icon_cucurucho-de-helado">
         <h1 class="titulo_page">Heladeria</h1>
-        <nav class="nav_navegation">
-            <ul class="nav_ul">
-                <li class="ul__li"><a class="li_enlaces" href="index.html">Inicio</a></li>
-                <li class="ul__li"><a class="li_enlaces" href="nosotros.html">Nosotros</a></li>
-                <li class="ul__li"><a class="li_enlaces" href="#">Noticias</a></li>
-            </ul>
-        </nav>
-        <button class="btn_contacto">Contacto</button>
+        <div class="content_nav_responsive">
+            <button class="btn_amburgesa"><i class="fa-solid fa-bars"></i></button>
+            <nav class="nav_navegation">
+                <ul class="nav_ul">
+                    <li class="ul__li"><a class="li_enlaces" href="/index.html">Inicio</a></li>
+                    <li class="ul__li"><a class="li_enlaces" href="nosotros.html">Nosotros</a></li>
+                    <li class="ul__li"><a class="li_enlaces" href="#">Noticias</a></li>
+                </ul>
+            </nav>
+            <button class="btn_contacto">Contacto</button>
+        </div>
     </header>
+    <script src="/nav/nav.js"></script>
 </body>
 </html>
