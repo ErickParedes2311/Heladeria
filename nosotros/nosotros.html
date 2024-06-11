@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.scss">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <title>Nosotros</title>
+        <script>
+                function loadNav() {
+                        fetch('/nav/indexNAV.html')
+                                .then(response => response.text())
+                                .then(data => {
+                                const navPlaceholder = document.getElementById('nav-placeholder');
+                                navPlaceholder.innerHTML = data;
+                                });
+
+                        fetch('/footer/footer.html')
+                                .then(response => response.text())
+                                .then(data => {
+                                const footerPlaceholder = document.getElementById('footer-placeholder');
+                                footerPlaceholder.innerHTML = data;
+                                });
+                }
+                document.addEventListener("DOMContentLoaded", loadNav);
+        </script>
+</head>
+<body onload="loadNav()">
+        <div id="nav-placeholder"></div>
+        <main class="content_cuerpo">
+            <section class="reutil principal">
+                <img class="r_img p_img" src="/Imagenes/fondoN.jpg" alt="">
+                <h3 class="r_titulo p_titulo">¿Quiénes somos?</h3>
+                <p class="r_parrafo p_parrafo"> Somos un grupo de personas apasionadas por los helados que se unieron para crear una fabrica de helados. Creemos que podemos mejorar la fabricacion de los helados haciendolos mas saludablesy deliciosos.</p>
+            </section>
+        </main>
+        <div id="footer-placeholder"></div>
+        <script src="Mecanica/script.js"></script>
+</body>
+</html>

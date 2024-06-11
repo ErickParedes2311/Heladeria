@@ -1,0 +1,23 @@
+@import '../reutilizables/formateo';
+
+.content_cuerpo
+{
+        display: flex;
+        .reutil
+        {
+                display: flex;
+                flex-direction: row;
+                .r_img
+                {
+                        width: 100px;
+                }
+                // .r_titulo
+                // {
+
+                // }
+                // .r_parrafo
+                // {
+
+                // }
+        }
+}
