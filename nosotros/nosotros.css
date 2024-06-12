@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: lighter;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+img {
+  width: 100px;
+}
+
+.content_cuerpo {
+  margin: 10px 0;
+}
+.content_cuerpo .principal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.content_cuerpo .principal .content_imagen {
+  max-width: 20%;
+  min-width: 15%;
+  margin: 5px 0;
+}
+.content_cuerpo .principal .content_imagen .p_img {
+  width: 100%;
+  height: 100%;
+}
+.content_cuerpo .principal .text_p {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0px 20px;
+}
+.content_cuerpo .principal .text_p .p_titulo {
+  text-align: center;
+  font-size: 1.5em;
+}
+.content_cuerpo .empleados {
+  background: #f9e5df;
+  padding: 20px 10px;
+}
+.content_cuerpo .empleados .empleado_R {
+  max-width: 550px;
+  min-width: 270px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 7px;
+}
+.content_cuerpo .empleados .empleado_R .empleado_cargo {
+  margin: 0 auto;
+}
+.content_cuerpo .empleados .empleado_R .empleado_cargo span {
+  font-weight: 800;
+}
+.content_cuerpo .empleados .empleado_R .empleado_img {
+  margin: 0 auto;
+}
+.content_cuerpo .empleados .empleado_R .empleado_nombre {
+  text-align: center;
+}
+.content_cuerpo .empleados .empleado_R .empleado_descripcion {
+  font-size: 1em;
+}
+.content_cuerpo .empleados .empleado_R .empleado_responsabilidad {
+  font-size: 0.8em;
+  width: 90%;
+  margin: 5px;
+}
+
+@media (max-width: 750px) {
+  .content_cuerpo .principal {
+    padding: 0 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .content_cuerpo .principal .content_imagen {
+    min-width: 100%;
+    height: 250px;
+    background-image: url(/Imagenes/fondoN.jpg);
+    background-position: top center;
+    text-align: center;
+  }
+  .content_cuerpo .principal .content_imagen .p_img {
+    display: none;
+  }
+  .content_cuerpo .principal .text_p {
+    margin: 0 0px;
+  }
+}/*# sourceMappingURL=nosotros.css.map */
