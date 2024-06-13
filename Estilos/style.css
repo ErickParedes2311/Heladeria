@@ -115,7 +115,7 @@ img {
 }
 .content_cuerpo .section_2 {
   margin-top: 25px;
-  background: #f9e5df;
+  background: rgba(249, 229, 223, 0.6823529412);
   animation: izquierda 1s ease;
 }
 .content_cuerpo .section_2 .section_descripcion {
@@ -163,8 +163,8 @@ img {
   min-width: 250px;
   height: -moz-max-content;
   height: max-content;
-  background-color: #f9e5df;
-  box-shadow: 0 4px 8px #f9e5df;
+  background-color: rgba(249, 229, 223, 0.6823529412);
+  box-shadow: 0 4px 8px rgba(249, 229, 223, 0.6823529412);
   overflow: hidden;
   transition: all 0.3s ease;
   border-radius: 10px;

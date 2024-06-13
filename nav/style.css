@@ -33,7 +33,7 @@ img {
 }
 
 header {
-  background-color: #f9e5df;
+  background-color: rgba(249, 229, 223, 0.6823529412);
   display: flex;
   align-items: center;
   padding: 10px 10px;

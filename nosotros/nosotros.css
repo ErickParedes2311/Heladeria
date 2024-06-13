@@ -40,12 +40,10 @@ img {
   align-items: center;
 }
 .content_cuerpo .principal .content_imagen {
-  max-width: 20%;
-  min-width: 15%;
   margin: 0 5px 0 0;
 }
 .content_cuerpo .principal .content_imagen .p_img {
-  width: 100%;
+  width: 300px;
   height: 100%;
 }
 .content_cuerpo .principal .text_p {
@@ -53,65 +51,60 @@ img {
   flex-direction: column;
   gap: 10px;
   margin: 0px 20px;
+  font-size: 1.2em;
 }
 .content_cuerpo .principal .text_p .p_titulo {
   text-align: center;
   font-size: 1.5em;
 }
-.content_cuerpo .empleados {
-  background: #f9e5df;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.content_cuerpo .empleados .content_r {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1em;
-  background-color: white;
-  border-radius: 1em;
-  padding: 7px 12px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.268);
-}
-.content_cuerpo .empleados .content_r .r_img {
-  margin: 5px 5px 5px 0;
-  max-width: 80px;
-  text-align: center;
-}
-.content_cuerpo .empleados .content_r .r_img img {
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  aspect-ratio: 1/1;
-}
-.content_cuerpo .empleados .content_r .r_text .r_responsabilidades b {
-  font-size: 0.8em;
-}
-.content_cuerpo .empleados .content_r .r_text .r_responsabilidades ul li {
-  font-size: 0.8em;
+.content_cuerpo .derecha {
+  background-color: rgba(249, 229, 223, 0.6823529412);
 }
 
 @media (max-width: 800px) {
-  .content_cuerpo .principal {
-    padding: 0 0px;
+  .content_cuerpo {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
-  .content_cuerpo .principal .content_imagen {
-    min-width: 100%;
+  .content_cuerpo .principal {
+    padding: 0 0 1.5em 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+  }
+  .content_cuerpo .principal .quienes_somos {
+    width: 100%;
     height: 250px;
-    background-image: url(/Imagenes/fondoN.jpg);
-    background-position: top center;
-    text-align: center;
+    background-image: url(/Imagenes/perfiles/teamwork-3213924_1280.jpg);
+    background-position: center center;
+  }
+  .content_cuerpo .principal .mision {
+    width: 100%;
+    height: 250px;
+    background-image: url(/Imagenes/perfiles/meeting-2284501_1280.jpg);
+    background-position: center center;
+  }
+  .content_cuerpo .principal .vision {
+    width: 100%;
+    height: 250px;
+    background-image: url(/Imagenes/perfiles/teamwork-5508359_1280.png);
+    background-position: center center;
+  }
+  .content_cuerpo .principal .equipo {
+    width: 100%;
+    height: 250px;
+    background-image: url(/Imagenes/perfiles/meeting-5395615_1280.jpg);
+    background-position: center center;
   }
   .content_cuerpo .principal .content_imagen .p_img {
     display: none;
   }
   .content_cuerpo .principal .text_p {
     margin: 0 0px;
+  }
+  .content_cuerpo .derecha {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }/*# sourceMappingURL=nosotros.css.map */

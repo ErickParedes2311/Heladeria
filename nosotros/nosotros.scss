@@ -1,3 +1,11 @@
+@mixin fondoNosotro($aquiURL)
+{
+        width: 100%;
+        height: 250px;
+        background-image: url(/Imagenes/perfiles/#{$aquiURL}) ;
+        background-position: center center;
+}
+
 @import '../reutilizables/formateo';
 .content_cuerpo
 {
@@ -8,12 +16,10 @@
                 align-items: center;
                 .content_imagen
                 {
-                        max-width: 20%;
-                        min-width: 15%;
                         margin:  0 5px 0 0;
                         .p_img
                         {
-                                width: 100%;
+                                width: 300px;
                                 height: 100%;
                         }
                 }
@@ -23,6 +29,7 @@
                         flex-direction: column;
                         gap: 10px;
                         margin: 0px 20px;
+                        font-size: 1.2em;
                         .p_titulo
                         {
                                 text-align: center;
@@ -30,79 +37,42 @@
                         }
                 }
         }
-
-        .empleados
+        .derecha
         {
-                background: $color_secundario;
-                padding: 20px ;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 1rem;
-                .content_r
-                {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        gap: 1em;
-                        background-color: white;
-                        border-radius: 1em;
-                        padding: 7px 12px;
-                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.268);
-                        .r_img
-                        {
-                                margin: 5px 5px 5px 0;
-                                max-width: 80px;
-                                text-align: center;
-                                img{
-                                        border-radius: 50%;
-                                        object-fit: cover;
-                                        width: 100%;
-                                        aspect-ratio: 1/1;
-                                }
-                        }
-                        .r_text
-                        {
-                                .r_cargo
-                                {
-
-                                }
-                                .r_nombre
-                                {
-
-                                }
-                                .r_responsabilidades
-                                {
-                                        b{
-                                                font-size: .8em;
-                                        }
-                                        ul{
-                                                li{
-                                                        font-size: .8em;
-                                                }
-                                        }
-                                }
-                        }
-                }
-                
+                background-color: $color_secundario;
         }
 }
 
 @media (max-width: 800px ) {
         .content_cuerpo
         {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 .principal
                 {
-                        padding:  0 0px;
+                        padding:  0 0 1.5em 0px;
                         display: flex;
                         flex-direction: column;
+                        gap: .8em;
+                        .quienes_somos
+                                {
+                                        @include fondoNosotro('teamwork-3213924_1280.jpg');
+                                }
+                         .mision
+                                {
+                                        @include fondoNosotro('meeting-2284501_1280.jpg');
+                                }
+                        .vision
+                                {
+                                        @include fondoNosotro('teamwork-5508359_1280.png');
+                                }
+                        .equipo
+                                {
+                                        @include fondoNosotro('meeting-5395615_1280.jpg');
+                                }
                         .content_imagen
                         {
-                                min-width: 100%;
-                                height: 250px;
-                                background-image: url(/Imagenes/fondoN.jpg) ;
-                                background-position: top center;
-                                text-align: center;
                                 .p_img
                                 {
                                         display: none;
@@ -113,48 +83,11 @@
                                 margin: 0 0px;
                         }
                 }
-                .empleados
+                .derecha
                 {
-                        .content_r
-                        {
-                                // .r_img
-                                // {
-                                //         width: 70px;
-                                //         img{
-                                //                 border-radius: 50%;
-                                //                 object-fit: cover;
-                                //                 width: 100%;
-                                //                 aspect-ratio: 1/1;
-                                //         }
-                                //         span{
-                                //                 font-size: .6em;
-                                //         }
-                                // }
-                                // .r_text
-                                // {
-                                //         .r_cargo
-                                //         {
-                                //                 font-size: .8em;
-                                //         }
-                                //         .r_nombre
-                                //         {
-                                //                 font-size: .8em;
-                                //         }
-                                //         .r_responsabilidades
-                                //         {
-                                //                 b{
-                                //                         font-size: 1em;
-                                //                 }
-                                //                 ul{
-                                //                         li{
-                                //                                 font-size: .5em;
-                                //                                 list-style: circle;
-                                //                         }
-                                //                 }
-                                //         }
-                                // }
-                        }
-                        
+                        display: flex;
+                        flex-direction: column-reverse;
+
                 }
         }
 }
