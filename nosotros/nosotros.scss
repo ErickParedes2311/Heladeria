@@ -1,17 +1,16 @@
 @import '../reutilizables/formateo';
 .content_cuerpo
 {
-        margin: 10px 0;
+        margin: 0px 0;
         .principal
         {
                 display: flex;
                 align-items: center;
-                gap: 10px;
                 .content_imagen
                 {
                         max-width: 20%;
                         min-width: 15%;
-                        margin: 5px 0;
+                        margin:  0 5px 0 0;
                         .p_img
                         {
                                 width: 100%;
@@ -35,47 +34,61 @@
         .empleados
         {
                 background: $color_secundario;
-                padding: 20px 10px ;
-                .empleado_R
+                padding: 20px ;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+                .content_r
                 {
-                        max-width: 550px;
-                        min-width: 270px;
-                        background: white;
                         display: flex;
-                        flex-direction: column;
-                        gap: 5px;
-                        padding: 7px;
-                        .empleado_cargo
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 1em;
+                        background-color: white;
+                        border-radius: 1em;
+                        padding: 7px 12px;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.268);
+                        .r_img
                         {
-                                margin: 0 auto;
-                                span{
-                                        font-weight: 800;
+                                margin: 5px 5px 5px 0;
+                                max-width: 80px;
+                                text-align: center;
+                                img{
+                                        border-radius: 50%;
+                                        object-fit: cover;
+                                        width: 100%;
+                                        aspect-ratio: 1/1;
                                 }
                         }
-                        .empleado_img
+                        .r_text
                         {
-                                margin: 0 auto;
-                        }
-                        .empleado_nombre
-                        {
-                                text-align: center;
+                                .r_cargo
+                                {
 
-                        }
-                        .empleado_descripcion
-                        {
-                                font-size: 1em;
-                        }
-                        .empleado_responsabilidad
-                        {
-                                font-size: .8em;
-                                width: 90%;
-                                margin: 5px ;
+                                }
+                                .r_nombre
+                                {
+
+                                }
+                                .r_responsabilidades
+                                {
+                                        b{
+                                                font-size: .8em;
+                                        }
+                                        ul{
+                                                li{
+                                                        font-size: .8em;
+                                                }
+                                        }
+                                }
                         }
                 }
+                
         }
 }
 
-@media (max-width: 750px ) {
+@media (max-width: 800px ) {
         .content_cuerpo
         {
                 .principal
@@ -98,10 +111,50 @@
                         .text_p
                         {
                                 margin: 0 0px;
-                                .p_titulo
-                                {
-                                }
                         }
+                }
+                .empleados
+                {
+                        .content_r
+                        {
+                                // .r_img
+                                // {
+                                //         width: 70px;
+                                //         img{
+                                //                 border-radius: 50%;
+                                //                 object-fit: cover;
+                                //                 width: 100%;
+                                //                 aspect-ratio: 1/1;
+                                //         }
+                                //         span{
+                                //                 font-size: .6em;
+                                //         }
+                                // }
+                                // .r_text
+                                // {
+                                //         .r_cargo
+                                //         {
+                                //                 font-size: .8em;
+                                //         }
+                                //         .r_nombre
+                                //         {
+                                //                 font-size: .8em;
+                                //         }
+                                //         .r_responsabilidades
+                                //         {
+                                //                 b{
+                                //                         font-size: 1em;
+                                //                 }
+                                //                 ul{
+                                //                         li{
+                                //                                 font-size: .5em;
+                                //                                 list-style: circle;
+                                //                         }
+                                //                 }
+                                //         }
+                                // }
+                        }
+                        
                 }
         }
 }
